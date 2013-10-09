@@ -1,0 +1,22 @@
+extends layout
+
+block header
+ script(src="socket.io/socket.io.js")
+ script(src="js/storyliner.js")
+ script(src='js/svg.js')
+
+block content
+ .navbar.navbar-inverse
+  .navbar-inner
+   .brand Storyliner
+   ul.nav
+    li: a(href="#") link
+    li: a(href="#") link
+ .stbody
+  .tabbable.tabs-left
+   ul.nav.nav-tabs
+    li.active: a(href="#profile", data-toggle="tab") Profile
+    li: a(href="#projects", data-toggle="tab") Projects
+   .tab-content
+    #profile.tab-pane.fade.in.active Profile!
+    #projects.tab-pane.fade Projects!

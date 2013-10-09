@@ -1,0 +1,104 @@
+.border-radius (@radius: 5px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.border-radius-top (@radius: 5px) {
+  border-top-left-radius: @radius;
+  -moz-border-radius-topleft: @radius;
+  -webkit-border-top-left-radius: @radius;
+  border-top-right-radius: @radius;
+  -moz-border-radius-topright: @radius;
+  -webkit-border-top-right-radius: @radius;
+}
+
+.border-radius-bottom (@radius: 5px) {
+  border-bottom-left-radius: @radius;
+  -moz-border-radius-bottomleft: @radius;
+  -webkit-border-bottom-left-radius: @radius;
+  border-bottom-right-radius: @radius;
+  -moz-border-radius-bottomright: @radius;
+  -webkit-border-bottom-right-radius: @radius;
+}
+
+.border-radius-left (@radius: 5px) {
+  border-bottom-left-radius: @radius;
+  -moz-border-radius-bottomleft: @radius;
+  -webkit-border-bottom-left-radius: @radius;
+  border-top-left-radius: @radius;
+  -moz-border-radius-topleft: @radius;
+  -webkit-border-top-left-radius: @radius;
+}
+
+.border-radius-right (@radius: 5px) {
+  border-top-right-radius: @radius;
+  -moz-border-radius-topright: @radius;
+  -webkit-border-top-right-radius: @radius;
+  border-bottom-right-radius: @radius;
+  -moz-border-radius-bottomright: @radius;
+  -webkit-border-bottom-right-radius: @radius;
+}
+
+.title {
+  .border-radius;
+  background-color: #2e4447;
+  margin-top: 10px;
+  padding-top: 20px;
+  /*& > * {
+    margin: 10px;
+  }*/
+}
+
+.desc {
+  color: white;
+  padding-left: 20px
+}
+
+.login {
+  .border-radius;
+  background-color: white;
+  padding: 10px;
+}
+
+.menubar {
+  .border-radius;
+  background-color: #2e4447;
+  position: absolute;
+  top: 52px;
+  bottom: 10px;
+  left: 10px;
+  /*width: 70px;*/
+}
+
+body {
+  background-color: #2e4447;
+}
+
+.stbody {
+  position: absolute;
+  margin: 0px 10px;
+  top: 62px;
+  left: 0px;
+  right: 0px;
+  bottom: 10px;
+  & > .tabbable > .nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 99px;
+    bottom: 0px;
+    margin: 0px;
+  }
+
+  & > .tabbable > .tab-content {
+    .border-radius-right;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    right: 0px;
+    bottom: 0px;
+    padding: 7px 19px;
+    background-color: white;
+  }
+}

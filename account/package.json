@@ -1,0 +1,21 @@
+{
+  "name": "storyliner-accounts",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node accounts.js"
+  },
+  "dependencies": {
+    "express": "3.2.5",
+    "jade": "*",
+    "i18next": "*",
+    "less-middleware":"*",
+    "socket.io": "*",
+    "connect-redis": "*",
+    "storyliner-model": "*",
+    "hashlib2": "1.0.3",
+    "request": "*",
+    "openid-connect": "*",
+    "q": "*"
+  }
+}

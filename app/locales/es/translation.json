@@ -1,0 +1,16 @@
+{
+    "login": {
+        "wellcome": "Bienvenido a __title__",
+        "title": "Ingresar o ",
+        "email": "Correo Electrónico",
+        "password": "Clave",
+        "enter": "Ingresar",
+        "forgot": "¿Olvidó su Clave?",
+        "create": "Crear una cuenta"
+    },
+    "exceptions": {
+        "params": {
+            "mandatory": "Parametro __param__ es obligatorio"
+        }
+    }
+}

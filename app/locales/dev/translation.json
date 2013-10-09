@@ -1,0 +1,16 @@
+{
+    "login": {
+        "wellcome": "Wellcome to __title__",
+        "title": "Login or ",
+        "email": "Email",
+        "password": "Password",
+        "enter": "Enter",
+        "forgot": "Forgot password?",
+        "create": "Create an account"
+    },
+    "exceptions": {
+        "params": {
+            "mandatory": "Parameter __param__ is mandatory"
+        }
+    }
+}

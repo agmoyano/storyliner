@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Consent
+  form(method='POST')
+   input(type='hidden', value=return_url)
+   ul
+    each val, key in scopes
+     li #{key}: #{val.explain}
+   input(type='submit', name="accept", value='accept')
+   input(type='button', name="cancel", value='cancel')

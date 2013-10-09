@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  form(method='POST',class="form-horizontal")
+   fieldset
+    legend= title
+    each v, k in fields
+     .form-group
+      label(for=k,class="col-lg-2 control-label")=v.label
+      .col-lg-10
+       !{v.html}
+    .form-group
+     .col-lg-2
+     .col-lg-10
+      input(type='submit',class="btn btn-default")
+  if error
+   script
+    $.toast('#{error}', {type: 'danger'});

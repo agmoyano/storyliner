@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  form(method='POST',class="form-horizontal")
+   fieldset
+    legend Login
+    input(type='hidden', value=return_url)
+    .form-group
+     label(for="user",class="col-lg-2 control-label") User 
+     .col-lg-10
+      input(class="form-control", name='user',id="user",placeholder="Enter User",type="text")
+    .form-group
+     label(for="password",class="col-lg-2 control-label") Password
+     .col-lg-10
+      input(class="form-control", name='password', id="password", type='password', placeholder="Enter Password")
+    .form-group
+     .col-lg-2
+     .col-lg-10
+      input(type='submit',class="btn btn-primary") 
+      a(class="btn btn-default", href="/user/sign-in?return_url="+return_url) Sing In
+    .form-group
+     .col-lg-2
+     .col-lg-10
+      a(href="/user/forgot") Forgot password?
+  if error
+   script
+    $.toast('#{error}', {type: 'danger'});

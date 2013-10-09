@@ -1,0 +1,21 @@
+extends layout
+
+block header
+ script(src='js/login.js')
+
+block content
+ .container.title
+  .row
+   .span7.desc
+    h1= title
+    p= t('login.wellcome', {title: title})
+   .span3.offset1.login
+    form(action='user/login')
+     fieldset
+      legend=t('login.title')
+       a.btn.btn-primary(href='user/create')=t('login.create')
+      input(type='text',id='user',placeholder=t('login.email'))
+      input(type='password',id='password',placeholder=t('login.password'))
+      div
+       a(href='user/getpassword')=t('login.forgot')
+      input(type='submit',value=t('login.enter'))
